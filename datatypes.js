@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 let lName;
 lName = "Souza";
 let newName = lName.toUpperCase();
@@ -14,8 +15,18 @@ let empList;
 empList = ["Souza", "Souza1", "Souza2"];
 let numList;
 numList = [1, 2, 3, 4, 5];
+let newNum = numList[5];
 let results = numList.filter((num) => num > 2);
-let num = numList.find((num) => num === 2);
+let emp = empList.find((emp) => emp === "Souza");
+let sum = numList.reduce((acc, num) => acc + num);
+console.log(result);
 console.log(results);
-console.log(num);
-// lname = 10;
+console.log(emp);
+console.log(sum);
+let c = 2 /* Color.Blue */;
+let swapNumbs;
+function swapNumbers(num1, num2) {
+    return [num2, num1];
+}
+swapNumbs = swapNumbers(10, 20);
+swapNumbs[0];
