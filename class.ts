@@ -7,6 +7,18 @@ class Employee {
 
   address: string;
 
+  get empId(): number {
+    return this.#id;
+  }
+
+  set empId(id: number) {
+    this.#id = id;
+  }
+
+  static getEmployeeCount(): number {
+    return 50;
+  }
+
   constructor(id: number, name: string, address: string) {
     this.address = address;
     this.#id = id;
@@ -19,6 +31,12 @@ class Employee {
 }
 
 let john = new Employee(1, "John", "Highway 71");
+
+john.empId = 100;
+
+console.log(john.empId);
+
+console.log(Employee.getEmployeeCount());
 
 class Manager extends Employee {
   constructor(id: number, name: string, address: string) {
