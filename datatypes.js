@@ -15,7 +15,7 @@ let empList;
 empList = ["Souza", "Souza1", "Souza2"];
 let numList;
 numList = [1, 2, 3, 4, 5];
-let newNum = numList[5];
+// let newNum = numList[5]; //There is no element 5 on numList
 let results = numList.filter((num) => num > 2);
 let emp = empList.find((emp) => emp === "Souza");
 let sum = numList.reduce((acc, num) => acc + num);
@@ -30,3 +30,8 @@ function swapNumbers(num1, num2) {
 }
 swapNumbs = swapNumbers(10, 20);
 swapNumbs[0];
+swapNumbs[1];
+let department; //Avoid using any
+// As a good practice, enable on the file tsconfig.json the parameter '"noImplicitAny": true,', by doing so you will prevent some errors during the development process.
+department = "IT";
+department = 10;

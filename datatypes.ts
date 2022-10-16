@@ -64,7 +64,7 @@ swapNumbs[0];
 swapNumbs[1];
 
 let department: any; //Avoid using any
-// As a good practice, enable on the file tsconfig.json the parameter '"noImplicitAny": true,', by doing so you will prevent some errors during your development process.
+// As a good practice, enable on the file tsconfig.json the parameter '"noImplicitAny": true,', by doing so you will prevent some errors during the development process.
 
 department = "IT";
 department = 10;
